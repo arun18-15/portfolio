@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
@@ -48,10 +47,10 @@ export default function Banner(): React.JSX.Element {
       id="home"
       className="min-h-screen flex items-center justify-center pt-24 px-4 md:px-6"
     >
-      <div className="container mx-auto max-w-6xl w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+      <div className="container mx-auto max-w-4xl w-full">
+        <div className="flex flex-col items-center justify-center text-center space-y-6">
           {/* Text content */}
-          <div className="flex-1 space-y-6 text-center lg:text-left order-2 lg:order-1">
+          <div className="space-y-6">
             {/* Introduction text */}
             <div>
               <p className="text-lg sm:text-xl md:text-2xl text-white font-medium mb-3">
@@ -63,15 +62,14 @@ export default function Banner(): React.JSX.Element {
             </div>
             <div>
               <p className="text-lg md:text-2xl text-gray-300">A Developer who</p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mt-2">
-                Builds
-                <br /> Scalable &{" "}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mt-2">
+                Builds Scalable &{" "}
                 <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
                   Reliable
                 </span>
-                <br/> Backend Systems
+                <br /> Backend Systems
               </h1>
-              <p className="text-sm md:text-base text-gray-300 mt-3">
+              <p className="text-sm md:text-base text-gray-300 mt-3 max-w-2xl mx-auto">
                 Clean code, strong problem-solving, and practical engineering
               </p>
             </div>
@@ -80,31 +78,9 @@ export default function Banner(): React.JSX.Element {
                 I&apos;m a {displayedText}
                 <span className="animate-pulse">|</span>
               </p>
-              <p className="text-base md:text-lg text-gray-300">
+              <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
                 An aspiring developer and computer science student, eager to build reliable software solutions with a focus on Java-based applications and backend development.
               </p>
-            </div>
-          </div>
-
-          {/* Character image */}
-          <div className="flex justify-center lg:justify-end relative w-full lg:w-auto order-1 lg:order-2">
-            <div className="relative max-w-sm md:max-w-md">
-              <Image
-                src="/assets/me-transparent.png"
-                alt="Arun Kumar - Java Developer"
-                width={300}
-                height={300}
-                className="w-full h-auto relative z-10"
-                priority
-              />
-              <Image
-                src="/assets/me-glow.png"
-                alt="Glow effect"
-                width={300}
-                height={300}
-                className="w-full h-auto absolute inset-0"
-                priority
-              />
             </div>
           </div>
         </div>
