@@ -90,7 +90,7 @@ export default function Banner(): React.JSX.Element {
           <div className="flex justify-center lg:justify-end relative w-full lg:w-auto order-1 lg:order-2">
             <div className="relative max-w-sm md:max-w-md">
               <Image
-                src="/assets/me.png"
+                src="/assets/me-transparent.png"
                 alt="Arun Kumar - Java Developer"
                 width={300}
                 height={300}
