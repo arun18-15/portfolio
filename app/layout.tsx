@@ -19,7 +19,7 @@ const signature = Allura({
 });
 
 export const metadata: Metadata = {
-  title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+  title: "ARUN",
   description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems. Specializing in clean code, problem-solving, and practical engineering solutions.",
   keywords: [
     "Arun Kumar",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://aruncodes.vercel.app",
-    title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+    title: "ARUN",
     description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems.",
     siteName: "Arun Kumar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+    title: "ARUN",
     description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems.",
   },
   robots: {
