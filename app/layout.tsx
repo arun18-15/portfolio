@@ -75,6 +75,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://aruncodes.vercel.app" />
+        <link rel="icon" href="/icon.png?v=2" />
         <script dangerouslySetInnerHTML={{__html: `
           (function() {
             try {
