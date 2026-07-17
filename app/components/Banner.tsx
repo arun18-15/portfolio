@@ -60,19 +60,7 @@ export default function Banner(): React.JSX.Element {
                 </span>
               </p>
             </div>
-            <div>
-              <p className="text-lg md:text-2xl text-gray-300">A Developer who</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mt-2">
-                Builds Scalable &{" "}
-                <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
-                  Reliable
-                </span>
-                <br /> Backend Systems
-              </h1>
-              <p className="text-sm md:text-base text-gray-300 mt-3 max-w-2xl mx-auto">
-                Clean code, strong problem-solving, and practical engineering
-              </p>
-            </div>
+
             <div className="space-y-3 pt-4">
               <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold">
                 I&apos;m a {displayedText}
