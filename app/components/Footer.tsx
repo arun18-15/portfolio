@@ -114,8 +114,14 @@ export default function Footer(): React.JSX.Element {
 
 
         <div className="text-center mt-10 md:mt-12 pt-6 md:pt-8 border-t border-white/10 flex flex-col items-center gap-2">
-          <p className="text-white/80 text-sm md:text-base font-normal">
-            A portfolio designed & built by <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent font-semibold inline-block">D ARUN KUMAR</span> with <span className="text-red-500 animate-pulse inline-block">❤️</span>
+          <p className="text-white/70 text-xs md:text-sm font-normal">
+            A portfolio designed & built by <span className="font-bold text-white">D ARUN KUMAR</span> with{" "}
+            <svg 
+              className="w-4.5 h-4.5 text-rose-500 fill-current animate-pulse drop-shadow-[0_0_6px_rgba(244,63,94,0.9)] inline-block align-middle mb-0.5" 
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
           </p>
           <p className="text-white/60 text-xs md:text-sm">
             © {new Date().getFullYear()} DIMMAGUDI ARUN KUMAR. All rights reserved.
