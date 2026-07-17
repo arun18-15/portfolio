@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["Java Developer", "Backend Developer", "Software Engineer"];
+  const texts = ["Java Developer", "Backend Developer", "Aspiring Software Engineer"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -52,16 +52,18 @@ export default function Banner(): React.JSX.Element {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Text content */}
           <div className="flex-1 space-y-6 text-center lg:text-left order-2 lg:order-1">
-            {/* Desktop: Hello text */}
-            <div className="hidden lg:block">
-              <p className="text-white text-base md:text-lg">
+            {/* Introduction text */}
+            <div>
+              <p className="text-lg sm:text-xl md:text-2xl text-white font-medium mb-3">
                 Hello! I Am{" "}
-                <span className="text-purple-400 font-semibold">DIMMAGUDI ARUN KUMAR</span>
+                <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent font-bold inline-block">
+                  DIMMAGUDI ARUN KUMAR
+                </span>
               </p>
             </div>
             <div>
               <p className="text-lg md:text-2xl text-gray-300">A Developer who</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mt-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mt-2">
                 Builds
                 <br /> Scalable &{" "}
                 <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
@@ -79,7 +81,7 @@ export default function Banner(): React.JSX.Element {
                 <span className="animate-pulse">|</span>
               </p>
               <p className="text-base md:text-lg text-gray-300">
-                Currently building reliable software solutions with a strong focus on Java-based applications and scalable backend systems.
+                An aspiring developer and computer science student, eager to build reliable software solutions with a focus on Java-based applications and backend development.
               </p>
             </div>
           </div>

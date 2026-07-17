@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Allura } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css";
@@ -11,15 +11,22 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const signature = Allura({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-signature",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Arun Kumar - Java Developer & Software Engineer",
-  description: "A passionate Java developer and software engineer focused on building reliable, scalable backend systems. Specializing in clean code, problem-solving, and practical engineering solutions.",
+  title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+  description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems. Specializing in clean code, problem-solving, and practical engineering solutions.",
   keywords: [
     "Arun Kumar",
     "Java Developer",
-    "Software Engineer",
+    "Aspiring Software Engineer",
+    "Computer Science Student",
     "Backend Developer",
-    "Full Stack Developer",
     "B.Tech Student",
     "Web Developer",
     "Portfolio",
@@ -30,15 +37,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
+    url: "https://portfolio-arun18-15.vercel.app",
+    title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+    description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems.",
+    siteName: "Arun Kumar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
+    title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
+    description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems.",
   },
   robots: {
     index: true,
@@ -65,12 +72,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
+        <link rel="canonical" href="https://portfolio-arun18-15.vercel.app" />
+        <script dangerouslySetInnerHTML={{__html: `
+          (function() {
+            try {
+              var storedTheme = localStorage.getItem('theme');
+              if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+              } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+              }
+            } catch (e) {}
+          })();
+        `}} />
       </head>
       <body
-        className={`${poppins.variable} font-sans antialiased`}
+        className={`${poppins.variable} ${signature.variable} font-sans antialiased`}
       >
         {children}
         <Analytics />

@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins), sans-serif;
+  --font-signature: var(--font-signature), cursive;
 }
 
 * {
@@ -139,3 +140,153 @@ img {
   opacity: 0;
   will-change: opacity, transform;
 }
+
+/* ==========================================
+   Light & Dark Theme Overrides
+   ========================================== */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default Dark Theme properties */
+:root {
+  --background: #110720;
+  --foreground: #ffffff;
+}
+
+/* Light Theme overrides */
+html[data-theme='light'] {
+  --background: #f7f6f9;
+  --foreground: #110720;
+}
+
+html[data-theme='light'] body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Global text and utility overrides for Light Mode */
+html[data-theme='light'] .text-white,
+html[data-theme='light'] h2.text-white,
+html[data-theme='light'] h1.text-white,
+html[data-theme='light'] h3.text-white,
+html[data-theme='light'] p.text-white,
+html[data-theme='light'] span.text-white {
+  color: var(--foreground) !important;
+}
+
+html[data-theme='light'] .text-white\/80 {
+  color: rgba(17, 7, 32, 0.8) !important;
+}
+
+html[data-theme='light'] .text-white\/60 {
+  color: rgba(17, 7, 32, 0.6) !important;
+}
+
+html[data-theme='light'] .text-white\/90 {
+  color: rgba(17, 7, 32, 0.9) !important;
+}
+
+html[data-theme='light'] .border-white\/10 {
+  border-color: rgba(17, 7, 32, 0.1) !important;
+}
+
+html[data-theme='light'] .bg-white\/10 {
+  background-color: rgba(17, 7, 32, 0.05) !important;
+}
+
+html[data-theme='light'] .bg-white\/5 {
+  background-color: rgba(247, 246, 249, 0.95) !important;
+  backdrop-blur-md: 10px;
+}
+
+html[data-theme='light'] .hover\:bg-white\/20:hover {
+  background-color: rgba(17, 7, 32, 0.1) !important;
+}
+
+html[data-theme='light'] header {
+  background-color: rgba(247, 246, 249, 0.8) !important;
+  border-bottom-color: rgba(17, 7, 32, 0.1) !important;
+}
+
+html[data-theme='light'] header a.text-white,
+html[data-theme='light'] header Link.text-white {
+  color: var(--foreground) !important;
+}
+
+html[data-theme='light'] main {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
+/* Gradients update for Light mode */
+html[data-theme='light'] .from-slate-950 {
+  --tw-gradient-from: #ffffff !important;
+  --tw-gradient-to: #ffffff !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html[data-theme='light'] .via-purple-950 {
+  --tw-gradient-via: #f2edf9 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important;
+}
+
+html[data-theme='light'] .to-slate-950 {
+  --tw-gradient-to: #ffffff !important;
+}
+
+html[data-theme='light'] .from-slate-950\/80 {
+  --tw-gradient-from: rgba(255, 255, 255, 0.8) !important;
+  --tw-gradient-to: rgba(255, 255, 255, 0.8) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html[data-theme='light'] .via-purple-950\/60 {
+  --tw-gradient-via: rgba(242, 240, 247, 0.6) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important;
+}
+
+html[data-theme='light'] .to-slate-950\/80 {
+  --tw-gradient-to: rgba(255, 255, 255, 0.8) !important;
+}
+
+html[data-theme='light'] .from-white\/5 {
+  --tw-gradient-from: rgba(17, 7, 32, 0.02) !important;
+  --tw-gradient-to: rgba(17, 7, 32, 0.02) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html[data-theme='light'] .to-white\/10 {
+  --tw-gradient-to: rgba(17, 7, 32, 0.06) !important;
+}
+
+html[data-theme='light'] .border-purple-700\/30 {
+  border-color: rgba(147, 51, 234, 0.2) !important;
+}
+
+html[data-theme='light'] .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(17, 7, 32, 0.04), 0 8px 10px -6px rgba(17, 7, 32, 0.04) !important;
+}
+
+html[data-theme='light'] .hover\:shadow-purple-900:hover {
+  box-shadow: 0 15px 30px -5px rgba(147, 51, 234, 0.15) !important;
+}
+
+html[data-theme='light'] .hover\:shadow-purple-900\/50:hover {
+  box-shadow: 0 15px 30px -5px rgba(147, 51, 234, 0.15) !important;
+}
+
+html[data-theme='light'] .border-slate-900 {
+  border-color: #f7f6f9 !important;
+}
+
+/* Cursor spotlight tracking override in Light Mode */
+html[data-theme='light'] .bg-\[radial-gradient\(circle\,rgba\(168\,85\,247\,0\.18\)_0\%\,rgba\(139\,92\,246\,0\.05\)_45\% \,transparent\_70\%\)\] {
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, rgba(147, 51, 234, 0.02) 45%, transparent 70%) !important;
+}
+
+.text-white-forced {
+  color: #ffffff !important;
+}
+
+

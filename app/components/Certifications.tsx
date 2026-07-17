@@ -61,9 +61,18 @@ export default function Certifications(): React.JSX.Element {
                     <p className="text-white text-sm md:text-base font-semibold group-hover:text-purple-400 transition-colors">
                       {cert.title}
                     </p>
-                    <p className="text-xs md:text-sm text-white/60 mt-2 group-hover:text-white/80 transition-colors">
-                      View →
-                    </p>
+                    <div className="mt-5 inline-flex items-center gap-1.5 px-4.5 py-2 text-xs md:text-sm font-semibold text-white-forced bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 rounded-full border border-purple-400/20 hover:border-purple-400/50 shadow-md hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform group-hover:-translate-y-0.5">
+                      <span className="text-white-forced">View Certificate</span>
+                      <svg
+                        className="w-3.5 h-3.5 text-white-forced transform group-hover:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2.5"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </Link>

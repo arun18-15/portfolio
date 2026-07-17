@@ -5,6 +5,7 @@ interface Project {
   id: number;
   title: string;
   description: string;
+  tech: string[];
   image: string;
   link?: string;
 }
@@ -13,7 +14,8 @@ const featuredProjects: Project[] = [
   {
     id: 1,
     title: "Liquid Library",
-    description: "A modern library-style web app deployed on Vercel with Supabase PostgreSQL for data storage, delivering responsive browsing and reliable backend support.\n\nTech Stack: React • Vite • Supabase • PostgreSQL",
+    description: "A modern library-style web app deployed on Vercel with Supabase PostgreSQL for data storage, delivering responsive browsing and reliable backend support.",
+    tech: ["React", "Vite", "Supabase", "PostgreSQL"],
     link: "https://liquids-library.vercel.app/",
     image: "/projects/liquidlibrar-cover.png",
   },
@@ -47,16 +49,31 @@ export default function Projects(): React.JSX.Element {
                         </p>
                       </div>
                     </div>
+
+                    {/* Tech Stack Badges */}
+                    {project.tech && project.tech.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.tech.map((t) => (
+                          <span
+                            key={t}
+                            className="px-3 py-1 text-xs md:text-sm font-medium text-purple-400 bg-purple-500/10 border border-purple-500/20 rounded-full"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
                     {/* View Project Button */}
                     {project.link && (
                       <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:-translate-y-1 group"
+                        className="inline-flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white-forced font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:-translate-y-1 group"
                         aria-label="View project"
                       >
-                        <span className="text-sm md:text-base">View Project</span>
+                        <span className="text-sm md:text-base text-white-forced">View Project</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -65,7 +82,7 @@ export default function Projects(): React.JSX.Element {
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform duration-300"
+                          className="w-4 h-4 md:w-5 md:h-5 text-white-forced group-hover:translate-x-1 transition-transform duration-300"
                         >
                           <line x1="5" y1="12" x2="19" y2="12" />
                           <polyline points="12 5 19 12 12 19" />
@@ -97,4 +114,3 @@ export default function Projects(): React.JSX.Element {
     </section>
   );
 }
-
