@@ -113,7 +113,10 @@ export default function Footer(): React.JSX.Element {
         </div>
 
 
-        <div className="text-center mt-10 md:mt-12 pt-6 md:pt-8 border-t border-white/10">
+        <div className="text-center mt-10 md:mt-12 pt-6 md:pt-8 border-t border-white/10 flex flex-col items-center gap-2">
+          <p className="text-white/80 text-sm md:text-base font-normal">
+            A portfolio designed & built by <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent font-semibold inline-block">D ARUN KUMAR</span> with <span className="text-red-500 animate-pulse inline-block">❤️</span>
+          </p>
           <p className="text-white/60 text-xs md:text-sm">
             © {new Date().getFullYear()} DIMMAGUDI ARUN KUMAR. All rights reserved.
           </p>
