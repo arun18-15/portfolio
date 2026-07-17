@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-arun18-15.vercel.app",
+    url: "https://aruncodes.vercel.app",
     title: "Arun Kumar - Java Developer & Aspiring Software Engineer",
     description: "An aspiring Java developer and computer science student focused on building reliable, scalable backend systems.",
     siteName: "Arun Kumar Portfolio",
@@ -74,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://portfolio-arun18-15.vercel.app" />
+        <link rel="canonical" href="https://aruncodes.vercel.app" />
         <script dangerouslySetInnerHTML={{__html: `
           (function() {
             try {

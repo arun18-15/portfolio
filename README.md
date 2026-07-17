@@ -1,12 +1,12 @@
 # Arun Kumar - Developer Portfolio 🚀
 
-[![Site preview](/public/assets/thumbnail.png)](https://portfolio-arun18-15.vercel.app/)
+[![Site preview](/public/assets/thumbnail.png)](https://aruncodes.vercel.app/)
 
-Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a Java Developer and Aspiring Software Engineer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). View the [live site](https://portfolio-arun18-15.vercel.app/).
+Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a Java Developer and Aspiring Software Engineer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). View the [live site](https://aruncodes.vercel.app/).
 
 # Features 🎉
 
-The whole [portfolio](https://portfolio-arun18-15.vercel.app/) is a React-based single page app built with Next.js in TypeScript, using only statically generated pages.
+The whole [portfolio](https://aruncodes.vercel.app/) is a React-based single page app built with Next.js in TypeScript, using only statically generated pages.
 
 - **Modern Design**: Beautiful, dark-themed UI designed in Figma with purple gradient accents
 - **Animated Typing Effect**: Dynamic text animation in the hero section that cycles through roles
@@ -40,7 +40,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 # 🚚 Deployment
 
-Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com/) with their GitHub integration, where the `main` branch is automatically aliased to [portfolio-arun18-15.vercel.app](https://portfolio-arun18-15.vercel.app/). A link to a preview deployment will appear under each Pull Request.
+Every branch or Pull Request is automatically deployed by [Vercel](https://vercel.com/) with their GitHub integration, where the `main` branch is automatically aliased to [aruncodes.vercel.app](https://aruncodes.vercel.app/). A link to a preview deployment will appear under each Pull Request.
 
 # 🏛 Licenses
 
